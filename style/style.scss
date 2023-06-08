@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+$bright-red: hsl(12, 88%, 59%);
+$dark-blue: hsl(228, 39%, 23%);
+$grayish-blue: hsl(227, 12%, 61%);
+$very-dark-blue: hsl(233, 12%, 13%);
+$pale-red: hsl(13, 100%, 96%);
+$light-gray: hsl(0, 0%, 98%);
+
+$font-family: 'Be Vietnam Pro', sans-serif;
+$weight-1: 400;
+$weight-2: 500;
+$weight-3: 700;
+
+$fontsize-1: 1rem;
+$fontsize-2: 1.5rem;
+$fontsize-3: 2rem;
+$fontsize-4: 2.5rem;
+
+
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+
+footer, header, nav, section, main{
+    display: block;
+}
+
+body{
+    line-height: 1;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+blockquote, q{
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input{
+    border-radius: 0;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 10vw 50px 10vw;
+
+    &__logo{
+        margin-top: 10px;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        font-family: $font-family;
+        font-size: $fontsize-1;
+        font-weight: $weight-2;
+    }
+    &__link{
+        margin: 0 20px 0 20px;
+    }
+    a{
+        text-decoration: none;
+        color: $very-dark-blue;
+    } 
+    a:hover{
+        color: $grayish-blue;
+    }
+
+    &__start{
+        padding: 1rem 2rem 1rem 2rem;
+        background-color: $bright-red;
+        border-radius: 40px;
+        color: $light-gray;
+        font-family: $font-family;
+        font-size: $fontsize-1;
+        font-weight: $weight-2;
+        border: none;
+    } 
+    &__start:hover {
+        box-shadow: 0px 5px 10px hsla(12, 88%, 59%, 0.5);
+    }
+}
+
+
+
