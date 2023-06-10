@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,76 @@
     <title>Manage</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
+
 <body>
-    <nav>
+    <header>
         <div class="navigation">
             <div class="navigation__logo">
                 <img src="./images/logo.svg" alt="Manage">
             </div>
-            <ol class="navigation__list">
-                <li class="navigation__link"><a href="#">Pricing</a></li>
-                <li class="navigation__link"><a href="#">Product</a></li>
-                <li class="navigation__link"><a href="#">About Us</a></li>
-                <li class="navigation__link"><a href="#">Careers</a></li>
-                <li class="navigation__link"><a href="#">Community</a></li>
-            </ol>
+            <nav class="navigation__primary">
+                <ol class="navigation__list">
+                    <li class="navigation__link"><a href="#">Pricing</a></li>
+                    <li class="navigation__link"><a href="#">Product</a></li>
+                    <li class="navigation__link"><a href="#">About Us</a></li>
+                    <li class="navigation__link"><a href="#">Careers</a></li>
+                    <li class="navigation__link"><a href="#">Community</a></li>
+                </ol>
+            </nav>
             <button class="navigation__start">Get Started</button>
         </div>
-    </nav>
+    </header>
+    <main>
+        <div class="even-columns introduction">
+            <div class="even-column-first">
+                <p class="section-header">Bring everyone together to build better products.</p>
+                <p class="default-paragraph">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+                <button class="navigation__start">Get Started</button>
+            </div>
+            <div class="even-column-second">
+                <img src="./images/illustration-intro.svg" usemap="#statistics" width="580" height="525">
+
+                <map name="statistics" class="inroduction__statistics">
+                    <area shape="rect" coords="34,34,580,525" alt="Computer" href="https://www.google.com.ua/?hl=uk" alt="">
+                </map>
+            </div>
+        </div>
+        <div class="even-columns different">
+            <div class="even-column-first">
+                <p class="different__header section-header">What's different about Manage?</p>
+                <p class="default-paragraph">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for madern digital product tems.</p>
+            </div>
+            <div class="different__second even-column-second">
+                <div class="subsection">
+                    <div class="subsection__number">
+                        <div class="subsection__number_div"><p>01</p></div>
+                    </div>
+                    <div class="subsection__info">
+                        <div class="subsection__header">Track company-wide progress</div>
+                        <div class="default-paragraph">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at a milestone level all the way done to the smalles of details. Never lose sight of the bigger picture again.</div>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <div class="subsection__number">
+                        <div class="subsection__number_div"><p>02</p></div>
+                    </div>
+                    <div class="subsection__info">
+                        <div class="subsection__header">Advanced built-in reports</div>
+                        <div class="default-paragraph">Set interval delivery estimates and track progress toward company goals. Our costumizable dashboard helps you build out the reports you need to keep key stakeholders informed.</div>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <div class="subsection__number">
+                        <div class="subsection__number_div"><p>03</p></div>
+                    </div>
+                    <div class="subsection__info">
+                        <div class="subsection__header">Everything you need in one place</div>
+                        <div class="default-paragraph">Stop jumping from one service to another to communicate, store files and share documents. Manage offers an all-in-one team producivity solution.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
