@@ -111,6 +111,7 @@ input {
 
 header {
   position: sticky;
+  z-index: 1000;
   top: 0;
   background-color: hsla(0, 0%, 98%, 0.6);
   border-bottom-right-radius: 30px;
@@ -307,4 +308,64 @@ header {
 .simplify .navigation__start:hover {
   box-shadow: 0px 5px 10px hsla(0, 0%, 100%, 0.5);
   color: hsl(12, 65%, 68%);
+}
+
+.footer {
+  background-color: hsl(233, 12%, 13%);
+  justify-content: space-between;
+}
+.footer .default-paragraph {
+  margin-bottom: 0;
+  margin-top: 50px;
+  transform: translateX(50%);
+}
+.footer .even-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 15%;
+}
+.footer__social {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__navigations {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.footer__navigations a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 98%);
+  font-weight: 400;
+}
+.footer .email-column {
+  width: 35% !important;
+}
+.footer__inbox {
+  border-radius: 40px;
+  padding: 1rem;
+  color: hsl(227, 12%, 61%);
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: none;
+  width: 60%;
+}
+.footer__inbox_go {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.get-email {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
 }/*# sourceMappingURL=style.css.map */
